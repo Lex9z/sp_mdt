@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="output\SPMultiPortFlashDownloadProject.exe"/>
+    <OBJFILES value="output\MultiPortFlashDownloadProject.obj 
+      output\MultiPortFlashDownloadTool.obj output\MultiPort_Utils.obj 
+      output\INIFileHandle.obj output\FlashDownLoad.obj output\time_utils.obj 
+      output\form_About.obj output\file_utils.obj output\form_MultiLoad.obj 
+      output\ThreadManager.obj output\GCTrace.obj output\SetBeginComPort.obj 
+      output\ToolSettings.obj output\NvramBackupMap.obj 
+      output\FirmwareUpgrade.obj output\TScanPort.obj output\COMPortUtils.obj 
+      output\CustomerSetup.obj output\PathSettings.obj 
+      output\ImageDetailInfo.obj output\NewAddedImages.obj 
+      output\NewIniHandle.obj output\ImagesFormat.obj output\com_util.obj 
+      output\EfuseWriter_Console.obj output\EfuseSettings.obj 
+      output\formChecksumProgress.obj output\PCMemoryChecksumProgress.obj 
+      output\BackupConfig.obj output\MD5.obj output\IdentityVerify.obj 
+      output\Form_PasswordSetting.obj output\tinystr.obj output\tinyxml.obj 
+      output\tinyxmlerror.obj output\tinyxmlparser.obj 
+      output\EfuseXMLSetting.obj output\MetaProcess.obj"/>
+    <RESFILES value="MultiPortFlashDownloadProject.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) MultiPortFlashDownloadTool.dfm Form\form_About.dfm 
+      Form\form_MultiLoad.dfm Form\SetBeginComPort.dfm Form\ToolSettings.dfm 
+      Form\formChecksumProgress.dfm Form\IdentityVerify.dfm 
+      Form\Form_PasswordSetting.dfm"/>
+    <LIBFILES value="&quot;C:\Program Files\Borland\CBuilder6\Lib\Psdk\shell32.lib&quot; Lib\eboot.lib 
+      Lib\FlashToolLib.lib Lib\SLA_Challenge.lib Lib\des.lib 
+      Meta\Lib\SP_META_Wrapper.lib Meta\Lib\SPBootMode.lib Meta\Lib\SPMETA_DLL.lib"/>
+    <LIBRARIES value="vcldb.lib vclx.lib bcbsmp.lib adortl.lib vcl.lib rtl.lib dbrtl.lib"/>
+    <SPARELIBS value="dbrtl.lib rtl.lib vcl.lib adortl.lib bcbsmp.lib vclx.lib vcldb.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi teedb.bpi 
+      tee.bpi vcldbx.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi nmfast.bpi 
+      bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi 
+      bcb2kaxserver.bpi MMTools_c6.bpi dclusr.bpi"/>
+    <PATHCPP value=".;INIFileHandle;INIFileHandle;Common;Form;Common;Form;Form;Form;FirmwareUpgrade;FirmwareUpgrade;INIFileHandle;Efuse;Efuse;Efuse;Form;Form;Form;Form;TinyXml\src;TinyXml\src;TinyXml\src;TinyXml\src;Efuse;Meta"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="$(USERDEFINES);NO_WIN32_LEAN_AND_MEAN;_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="MultiPortFlashDownloadProject.cpp"/>
+    <INCLUDEPATH value="Meta;TinyXml\src;Efuse;Brom;Eboot;FirmwareUpgrade;Form;Common;Headers;INIFileHandle;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;Meta\inc"/>
+    <LIBPATH value="Meta;TinyXml\src;Efuse;FirmwareUpgrade;&quot;Comm\USB COM&quot;;&quot;META App&quot;;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL&quot;;$(BCB)\Projects\Lib;freqz;firls;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\Psdk;Meta\Lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ITinyXml\src -IEfuse -IBrom -IEboot -IFirmwareUpgrade -IForm -ICommon 
+      -IHeaders -IINIFileHandle -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D$(USERDEFINES) 
+      -DNO_WIN32_LEAN_AND_MEAN -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Vx -Ve -RT- -X- -r- -a8 -b -k -y -v -vi- -tWD 
+      -tWM- -c"/>
+    <PFLAGS value="-N2output -N0output -$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-loutput -Ioutput -D&quot;&quot; -aa -Tpe -GD -s -Gn -Gi -M -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="MultiPortFlashDownloadProject.res" FORMNAME="" UNITNAME="MultiPortFlashDownloadProject.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MultiPortFlashDownloadProject.cpp" FORMNAME="" UNITNAME="MultiPortFlashDownloadProject" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MultiPortFlashDownloadTool.cpp" FORMNAME="MainForm" UNITNAME="MultiPortFlashDownloadTool" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="INIFileHandle\MultiPort_Utils.cpp" FORMNAME="" UNITNAME="MultiPort_Utils.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="INIFileHandle\INIFileHandle.cpp" FORMNAME="" UNITNAME="INIFileHandle.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashDownLoad.cpp" FORMNAME="" UNITNAME="FlashDownLoad" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Common\time_utils.cpp" FORMNAME="" UNITNAME="time_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_About.cpp" FORMNAME="Form_AboutMD" UNITNAME="form_About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Common\file_utils.cpp" FORMNAME="" UNITNAME="file_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_MultiLoad.cpp" FORMNAME="frmMultiLoad" UNITNAME="form_MultiLoad" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ThreadManager.cpp" FORMNAME="" UNITNAME="ThreadManager" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GCTrace.cpp" FORMNAME="" UNITNAME="GCTrace" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\SetBeginComPort.h" FORMNAME="" UNITNAME="SetBeginComPort.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\SetBeginComPort.cpp" FORMNAME="dlgSetBeginComPort" UNITNAME="SetBeginComPort" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\SetBeginComPort.dfm" FORMNAME="" UNITNAME="SetBeginComPort.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\ToolSettings.cpp" FORMNAME="Form_tool_settings" UNITNAME="ToolSettings" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FirmwareUpgrade\NvramBackupMap.cpp" FORMNAME="" UNITNAME="NvramBackupMap.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FirmwareUpgrade\FirmwareUpgrade.cpp" FORMNAME="" UNITNAME="FirmwareUpgrade.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TScanPort.cpp" FORMNAME="" UNITNAME="TScanPort.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="COMPortUtils.cpp" FORMNAME="" UNITNAME="COMPortUtils.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CustomerSetup.cpp" FORMNAME="" UNITNAME="CustomerSetup" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CustomerSetup.h" FORMNAME="" UNITNAME="CustomerSetup.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PathSettings.h" FORMNAME="" UNITNAME="PathSettings.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PathSettings.cpp" FORMNAME="" UNITNAME="PathSettings.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ImageDetailInfo.cpp" FORMNAME="" UNITNAME="ImageDetailInfo.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NewAddedImages.cpp" FORMNAME="" UNITNAME="NewAddedImages.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="INIFileHandle\NewIniHandle.h" FORMNAME="" UNITNAME="NewIniHandle.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="INIFileHandle\NewIniHandle.cpp" FORMNAME="" UNITNAME="NewIniHandle.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ImageDetailInfo.h" FORMNAME="" UNITNAME="ImageDetailInfo.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NewAddedImages.h" FORMNAME="" UNITNAME="NewAddedImages.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ImagesFormat.cpp" FORMNAME="" UNITNAME="ImagesFormat.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ImagesFormat.h" FORMNAME="" UNITNAME="ImagesFormat.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\com_util.cpp" FORMNAME="" UNITNAME="com_util.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\com_util.h" FORMNAME="" UNITNAME="com_util.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\cust_sec_ctrl.h" FORMNAME="" UNITNAME="cust_sec_ctrl.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\EfuseWriter_Console.cpp" FORMNAME="" UNITNAME="EfuseWriter_Console.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\EfuseWriter_Console.h" FORMNAME="" UNITNAME="EfuseWriter_Console.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\EfuseSettings.h" FORMNAME="" UNITNAME="EfuseSettings.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\EfuseSettings.cpp" FORMNAME="" UNITNAME="EfuseSettings.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\formChecksumProgress.cpp" FORMNAME="formPCMemoryChecksum" UNITNAME="formChecksumProgress" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PCMemoryChecksumProgress.cpp" FORMNAME="" UNITNAME="PCMemoryChecksumProgress" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Borland\CBuilder6\Lib\Psdk\shell32.lib" FORMNAME="" UNITNAME="shell32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BackupConfig.h" FORMNAME="" UNITNAME="BackupConfig.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BackupConfig.cpp" FORMNAME="" UNITNAME="BackupConfig" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashDownLoad.h" FORMNAME="" UNITNAME="FlashDownLoad.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="output\protected_region.ini" FORMNAME="" UNITNAME="protected_region.ini" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_MultiLoad.h" FORMNAME="" UNITNAME="form_MultiLoad.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Lib\eboot.lib" FORMNAME="" UNITNAME="eboot.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Lib\FlashToolLib.lib" FORMNAME="" UNITNAME="FlashToolLib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Lib\SLA_Challenge.lib" FORMNAME="" UNITNAME="SLA_Challenge.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\MD5.cpp" FORMNAME="" UNITNAME="MD5" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\MD5.h" FORMNAME="" UNITNAME="MD5.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\IdentityVerify.cpp" FORMNAME="Identity" UNITNAME="IdentityVerify" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Headers\des.h" FORMNAME="" UNITNAME="des.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Lib\des.lib" FORMNAME="" UNITNAME="des.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="output\des.dll" FORMNAME="" UNITNAME="des.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\Form_PasswordSetting.cpp" FORMNAME="PasswordSetting" UNITNAME="Form_PasswordSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TinyXml\header\tinystr.h" FORMNAME="" UNITNAME="tinystr.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TinyXml\header\tinyxml.h" FORMNAME="" UNITNAME="tinyxml.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TinyXml\src\tinystr.cpp" FORMNAME="" UNITNAME="tinystr.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TinyXml\src\tinyxml.cpp" FORMNAME="" UNITNAME="tinyxml.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TinyXml\src\tinyxmlerror.cpp" FORMNAME="" UNITNAME="tinyxmlerror.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TinyXml\src\tinyxmlparser.cpp" FORMNAME="" UNITNAME="tinyxmlparser.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\EfuseXMLSetting.cpp" FORMNAME="" UNITNAME="EfuseXMLSetting.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Efuse\EfuseXMLSetting.h" FORMNAME="" UNITNAME="EfuseXMLSetting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\MetaProcess.cpp" FORMNAME="" UNITNAME="MetaProcess.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\inc\MetaProcess.h" FORMNAME="" UNITNAME="MetaProcess.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\Lib\SP_META_Wrapper.lib" FORMNAME="" UNITNAME="SP_META_Wrapper.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\Lib\SPBootMode.lib" FORMNAME="" UNITNAME="SPBootMode.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\Lib\SPMETA_DLL.lib" FORMNAME="" UNITNAME="SPMETA_DLL.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\inc\sp_brom.h" FORMNAME="" UNITNAME="sp_brom.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\inc\SP_META_Wrapper.h" FORMNAME="" UNITNAME="SP_META_Wrapper.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta\inc\spmeta.h" FORMNAME="" UNITNAME="spmeta.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=12
+MinorVer=52
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1028
+CodePage=950
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=12.52.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=22
+Item0=Meta;TinyXml\src;Efuse;Brom;Eboot;FirmwareUpgrade;Form;Common;Headers;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Meta\inc
+Item1=TinyXml\src;Efuse;Brom;Eboot;FirmwareUpgrade;Form;Common;Headers;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Meta\inc
+Item2=Meta;TinyXml\src;Efuse;Brom;Eboot;FirmwareUpgrade;Form;Common;Headers;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item3=TinyXml\src;Efuse;Brom;Eboot;FirmwareUpgrade;Form;Common;Headers;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item4=Efuse;Brom;Eboot;FirmwareUpgrade;Form;Common;Headers;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item5=Brom;Eboot;FirmwareUpgrade;Form;Common;Headers;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item6=FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item7=Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item8=META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item9=GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item10=Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item11=Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter
+Item12=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter
+Item13=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll
+Item14=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll
+Item15=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle
+Item16=Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle
+Item17=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle
+Item18=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL\Brom dll
+Item19=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL\Common
+Item20=C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\include;$(BCB)\include\vcl
+Item21=freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=17
+Item0=Meta;TinyXml\src;Efuse;FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\Psdk;Meta\Lib
+Item1=Meta;TinyXml\src;Efuse;FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\Psdk
+Item2=TinyXml\src;Efuse;FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\Psdk
+Item3=Efuse;FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\Psdk
+Item4=Efuse;FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\lib\Psdk;
+Item5=Efuse;FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item6=FirmwareUpgrade;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item7=Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item8=META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item9=GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item10=Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item11=FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item12=Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item13=Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item14=INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item15=C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item16=$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=6
+Item0=$(USERDEFINES);NO_WIN32_LEAN_AND_MEAN;_DEBUG
+Item1=$(USERDEFINES);NO_WIN32_LEAN_AND_MEAN
+Item2=_DEBUG
+Item3=SERVICE_CENTER;_DEBUG
+Item4=SERVICE_CENTER
+Item5=_DEBUG;__cplusplus
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=output
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=output\
+Item1=output
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=output
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>

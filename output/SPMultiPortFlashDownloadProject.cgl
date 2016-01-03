@@ -1,0 +1,85 @@
+Error 00001. 0x130C10 (Thread 0x0858):
+Method called on illegally casted object: Attempt to access 224 byte(s) at
+ 0x018F1074. The 'this' pointer points to heap block 0x018F1074 which is only
+ 220 bytes long.
+Call Tree:
+   0x00410DBE(=SPMultiPortFlashDownloadProject.exe:0x01:00FDBE) C:\Program Files\Borland\CBuilder6\include\vcl\ADODB.hpp#277
+   0x00410CB9(=SPMultiPortFlashDownloadProject.exe:0x01:00FCB9) E:\Projects\MDT\CUST pack\MultiPortFlashDownloadTool.cpp#2764
+   0x0041286A(=SPMultiPortFlashDownloadProject.exe:0x01:01186A) E:\Projects\MDT\CUST pack\MultiPortFlashDownloadTool.cpp#3115
+   0x00404C78(=SPMultiPortFlashDownloadProject.exe:0x01:003C78) E:\Projects\MDT\CUST pack\MultiPortFlashDownloadTool.cpp#620
+   0x004ACE5F(=SPMultiPortFlashDownloadProject.exe:0x01:0ABE5F) Forms.pas#2801
+   0x004B0981(=SPMultiPortFlashDownloadProject.exe:0x01:0AF981) Forms.pas#4361
+
+The memory block (0x018F1074) [size: 220 bytes] was allocated with SysGetMem
+Call Tree:
+   0x0051640F(=SPMultiPortFlashDownloadProject.exe:0x01:11540F) system.pas#2450
+   0x004F7C12(=SPMultiPortFlashDownloadProject.exe:0x01:0F6C12) classes.pas#6020
+   0x004F7E67(=SPMultiPortFlashDownloadProject.exe:0x01:0F6E67) classes.pas#6076
+   0x004F7DA0(=SPMultiPortFlashDownloadProject.exe:0x01:0F6DA0) classes.pas#6055
+   0x004FCD5B(=SPMultiPortFlashDownloadProject.exe:0x01:0FBD5B) classes.pas#9588
+   0x004C01EE(=SPMultiPortFlashDownloadProject.exe:0x01:0BF1EE) Controls.pas#3273
+
+------------------------------------------
+Error 00002. 0x300010 (Thread 0x0858):
+Resource leak: The memory block (0x18D1A34) was never freed
+
+The memory block (0x018D1A34) [size: 36 bytes] was allocated with SysGetMem
+Call Tree:
+   0x0051640F(=SPMultiPortFlashDownloadProject.exe:0x01:11540F) system.pas#2450
+   0x00477FA6(=SPMultiPortFlashDownloadProject.exe:0x01:076FA6) WinHelpViewer.pas#655
+   0x005437A9(=SPMultiPortFlashDownloadProject.exe:0x01:1427A9)
+   0x0054397F(=SPMultiPortFlashDownloadProject.exe:0x01:14297F)
+
+------------------------------------------
+Error 00003. 0x300010 (Thread 0x0858):
+Resource leak: The memory block (0x18E1F10) was never freed
+
+The memory block (0x018E1F10) [size: 152 bytes] was allocated with SysGetMem
+Call Tree:
+   0x0051640F(=SPMultiPortFlashDownloadProject.exe:0x01:11540F) system.pas#2450
+   0x00453D64(=SPMultiPortFlashDownloadProject.exe:0x01:052D64) E:\Projects\MDT\CUST pack\ThreadManager.cpp#106
+   0x004021DC(=SPMultiPortFlashDownloadProject.exe:0x01:0011DC) E:\Projects\MDT\CUST pack\MultiPortFlashDownloadTool.cpp#243
+   0x004B531B(=SPMultiPortFlashDownloadProject.exe:0x01:0B431B) Forms.pas#6770
+   0x004017BE(=SPMultiPortFlashDownloadProject.exe:0x01:0007BE) E:\Projects\MDT\CUST pack\MultiPortFlashDownloadProject.cpp#90
+   0x005439E3(=SPMultiPortFlashDownloadProject.exe:0x01:1429E3)
+
+------------------------------------------
+Functions called:
+ fflush (8 times)
+ vsnprintf (16 times)
+ fclose (1 times)
+ fopen (1 times)
+ _vsnprintf (6 times)
+ stricmp (124 times)
+ delete (26 times)
+ free (9 times)
+ memmove (6 times)
+ new (32 times)
+ SysReallocMem (247 times)
+ SysFreeMem (9122 times)
+ SysGetMem (9124 times)
+ lstrlenA (1 times)
+ lstrcpynA (4 times)
+ calloc (1 times)
+ strlen (252 times)
+ realloc (1 times)
+ strdup (1 times)
+ malloc (6 times)
+ memcpy (81 times)
+Resource types used:
+ object (32 allocs, 26 max)
+ memory block (9133 allocs, 2466 max)
+ file stream (1 allocs, 1 max)
+ file handle (1 allocs, 1 max)
+Modules used:
+ 00390000 11/03/2010 11:29:48 E:\Projects\MDT\CUST
+ pack\output\USBCOMFinder.dll
+ 00400000 11/15/2010 11:40:26 E:\Projects\MDT\CUST
+ pack\output\SPMultiPortFlashDownloadProject.exe
+ 005E0000 11/15/2010 11:31:48 E:\Projects\MDT\CUST pack\output\EBOOT.DLL
+Error 00004. 0x400000 (Thread 0x0858):
+Exception 0xC0000005: Access violation at 0x16.
+Call Tree:
+   0x0CD18772(=CG32.DLL:0x01:017772)
+
+------------------------------------------
